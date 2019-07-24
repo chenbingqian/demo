@@ -3,9 +3,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>com.kiki</groupId>
-		<artifactId>kparents</artifactId>
-		<version>0.0.1</version>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.11.RELEASE</version>
+		<relativePath/>
 	</parent>
 	<artifactId>keurkea</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -17,7 +18,17 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>Edgware.SR3</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 	<dependencies>
 		<!--增加eureka-server的依赖 -->
 		<dependency>
