@@ -40,4 +40,15 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<repositories>
+		<repository>
+			<!-- id必须唯一 -->
+			<id>aliyun-repository</id>
+			<!-- 见名知意即可 -->
+			<name>aliyun repository</name>
+			<!-- 仓库的url地址 -->
+			<url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+		</repository>
+	</repositories>
 </project>
