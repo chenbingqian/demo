@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: keureka-server
+server:
+  port: 2222
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl: 
+      defaultZone: http://localhost:${server.port}/eureka/
